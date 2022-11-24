@@ -1,8 +1,15 @@
 import { FC } from "react"
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
+import { Inicio } from "./pages"
 
 const App:FC = ():JSX.Element => {
   return (
-    <div>App</div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Inicio />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
